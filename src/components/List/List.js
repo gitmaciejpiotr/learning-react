@@ -2,11 +2,12 @@ import styles from './List.module.scss';
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector } from 'react-redux';
+import { getAllColumns } from '../../redux/store';
 // import { useState } from 'react';
 // import { useEffect } from 'react';
 
 const List = () => {
-  const columns = useSelector(state => state.columns);
+  const columns = useSelector(getAllColumns);
 
   return (
     <div className={styles.list}>
@@ -18,7 +19,7 @@ const List = () => {
         {columns.map(column =>
           <Column
             key={column.id}
-            {...column}  />
+            {...column} />
         )}
       </section>
       <ColumnForm />
