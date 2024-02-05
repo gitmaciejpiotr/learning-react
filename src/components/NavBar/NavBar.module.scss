@@ -15,12 +15,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 .siteLink {
     color: $color-light;
     text-decoration: none;
 } 
+
+.linkActive {
+    color: $color-warning;
+    text-decoration: none;
+}
 
 .icon {
     font-size: 24px;
