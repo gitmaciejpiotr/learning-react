@@ -12,7 +12,6 @@ const List = () => {
   const { listId } = useParams();
   const listData = useSelector(state => getListById(state, listId));
   const columns = useSelector(state => getColumnsByList(state, listId));
-  console.log(listData);
 
   if (!listData) return <Navigate to="/" />
   return (

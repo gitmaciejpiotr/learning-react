@@ -11,3 +11,16 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
+.starButton {
+    background: none;
+    border: none;
+}
+
+.starButton span:hover {
+    color: goldenrod;
+}
+
+.starButton .active {
+    color: gold;
+}
