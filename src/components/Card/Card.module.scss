@@ -17,10 +17,19 @@
     border: none;
 }
 
-.starButton span:hover {
+.iconStar:hover {
     color: goldenrod;
 }
 
-.starButton .active {
+.icon {
+    margin: 0 2.5px;
+    color: grey;
+}
+
+.active {
     color: gold;
+}
+
+.iconTrash:hover {
+    color: black;
 }
